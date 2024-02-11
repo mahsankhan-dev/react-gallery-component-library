@@ -22,6 +22,10 @@
   },
   "author": "Ahsan Khan",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahsankhan-dev/react-gallery-component-library/issues"
+  },
+  "homepage": "https://github.com/mahsankhan-dev/react-gallery-component-library",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
