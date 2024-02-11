@@ -1,0 +1,257 @@
+.main {
+  padding: 62px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+/* py-[62px] px-[80px] flex flex-col gap-[60px] ssms:gap-[30px] above-1450 sm:px-[30px] */
+.container {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapperimg {
+  width: 33%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.modal {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalWrapper {
+  height: 80%;
+  padding: 2.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.modalwrappercontainer {
+  display: flex;
+  position: relative;
+  height: 75%;
+  width: 70%;
+}
+
+.modalwrapperimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.closeicon {
+  width: 35px;
+  height: 35px;
+  border-radius: 47px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  right: -60px;
+}
+
+.lefticon {
+  width: 35px;
+  height: 35px;
+  border-radius: 47px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.righticon {
+  width: 35px;
+  height: 35px;
+  border-radius: 47px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.swipercontainer {
+  display: flex;
+  /* height: 35%; */
+  width: 70%;
+}
+
+.swiperimage {
+  width: 100%;
+  /* height: 100%; */
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.swiperimage2 {
+  border: 4px solid #bfbfbf;
+}
+
+.mobile-view {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  justify-content: space-between;
+  height: 35%;
+  width: 70%;
+}
+
+.mobileviewimage {
+  width: 164px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.selectdImage {
+  border: 4px solid #bfbfbf;
+}
+
+/* 2xl  */
+/* @media (max-width: 1535px) { */
+.mobile-view {
+  display: none;
+}
+/* } */
+/* xl */
+@media (max-width: 1279px) {
+  .mobile-view {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* lg2 */
+@media (max-width: 1120px) {
+  .wrapperimg {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modalwrappercontainer {
+    height: auto;
+    width: 100%;
+  }
+  .modalwrapperimage {
+    object-fit: contain;
+  }
+  .swipercontainer {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* ssms */
+
+@media (max-width: 500px) {
+  .wrapperimg {
+    border-radius: 8px;
+  }
+  .mobileviewimage {
+    width: 154px;
+  }
+  .main {
+    gap: 30px;
+  }
+}
+
+/* sm  */
+@media (max-width: 639px) {
+  .modalWrapper {
+    padding-top: 2.5rem /* 40px */;
+    padding-bottom: 2.5rem /* 40px */;
+    padding-left: 1.25rem /* 20px */;
+    padding-right: 1.25rem /* 20px */;
+    width: 90%;
+    gap: 30px;
+  }
+  .closeicon {
+    right: -6px;
+  }
+  .lefticon {
+    display: none;
+  }
+  .righticon {
+    display: none;
+  }
+  .swipercontainer {
+    display: none;
+  }
+  .mobile-view {
+    overflow: scroll;
+    display: flex;
+  }
+  .main {
+    /* px-[30px]  */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.mySwiper-another .swiper-pagination {
+  position: relative !important;
+  margin-top: -7px !important;
+  z-index: 999 !important;
+}
+
+.mySwiper-another .swiper-pagination .swiper-pagination-bullet-active {
+  width: 54px !important;
+  height: 9px !important;
+  background-color: #04a073 !important;
+  border-radius: 19px !important;
+}
+
+.mySwiper-another .swiper-pagination-bullet {
+  width: 22px !important;
+  height: 7px !important;
+  background-color: #7de3c6 !important;
+  border-radius: 19px !important;
+}
+
+.mySwiper-another {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 7px !important;
+}
